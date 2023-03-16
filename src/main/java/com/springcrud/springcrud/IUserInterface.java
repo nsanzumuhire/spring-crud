@@ -8,4 +8,6 @@ public interface IUserInterface {
     public List<User> getAll();
     public Optional<User> getUser(UUID id);
     public Optional<User> getUserByEmail(String email);
+    public ResponseObjectDto createUser(UserDto userDto);
+    public ResponseObjectDto updateUser(UserDto userDto, UUID id);
 }

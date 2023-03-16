@@ -1,15 +1,13 @@
 package com.springcrud.springcrud;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
 @Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue
     private UUID id;
 
     @Column(unique = true)
